@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://box.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8.78918, 11.3714 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite4" type="Sprite" parent="."]
+position = Vector2( -2099.17, 853.262 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 1000 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite4/StaticBody2D"]
+position = Vector2( -3.15314, 999.739 )
+scale = Vector2( 15, 12 )
+shape = SubResource( 1 )
+
+[node name="Sprite5" type="Sprite" parent="."]
+position = Vector2( 796.83, -202.738 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 1000 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite5/StaticBody2D"]
+position = Vector2( 2.18018, 1005.07 )
+scale = Vector2( 15, 12 )
+shape = SubResource( 1 )
+
+[node name="Sprite6" type="Sprite" parent="."]
+position = Vector2( 2780.83, -5210.74 )
+scale = Vector2( 7, 7 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 1000 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite6/StaticBody2D"]
+position = Vector2( 3.26584, 998.387 )
+scale = Vector2( 15, 12 )
+shape = SubResource( 1 )
